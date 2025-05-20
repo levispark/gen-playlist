@@ -5,19 +5,19 @@ import requests
 
 
 def runServers():
-    with open("playlist1.m3u8", "w") as file:
+    with open("docs/playlist1.m3u8", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(lis)):
         print(f"{i+1}.{lis[i]}")
         server1(i + 1, lis[i])
         
-    with open("playlist2.m3u8", "w") as file:
+    with open("docs/playlist2.m3u8", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(hashCode)):
         print(f"{i+1}.{channels[i]}")
         server2(hashCode[i], channels[i])
 
-    with open("playlist3.m3u8", "w") as file:
+    with open("docs/playlist3.m3u8", "w") as file:
         file.write("#EXTM3U\n")
     for i in range(len(hashcode_3)):
         print(f"{i+1}.{channels_3[i]}")
@@ -40,7 +40,7 @@ def server1(i, name):
     if match:
         stream_url = match.group(1)
         # print(stream_url)
-        with open("playlist1.m3u8", "a") as file:
+        with open("docs/playlist1.m3u8", "a") as file:
             file.write(f"#EXTINF:-1,{name}\n")
             file.write(f"{stream_url}\n")
 
@@ -59,7 +59,7 @@ def server2(hash, name):
     token = data["fileUrl"]
 
     stream_url = f"https://moonlight.wideiptv.top/{name}/index.fmp4.m3u8?token={token}"
-    with open("playlist2.m3u8", "a") as file:
+    with open("docs/playlist2.m3u8", "a") as file:
         file.write(f"#EXTINF:-1,{name}\n")
         file.write(f"{stream_url}\n")
     # print(stream_url)
@@ -76,7 +76,7 @@ def server3(hash, name):
     token = data["fileUrl"]
 
     stream_url = f"https://moonlight.wideiptv.top/{name}/index.fmp4.m3u8?token={token}"
-    with open("playlist3.m3u8", "a") as file:
+    with open("docs/playlist3.m3u8", "a") as file:
         file.write(f"#EXTINF:-1,{name}\n")
         file.write(f"{stream_url}\n")
 
