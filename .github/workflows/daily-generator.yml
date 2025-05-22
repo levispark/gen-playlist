@@ -2,7 +2,7 @@ name: Daily File Generator
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Runs every 30 min
+    - cron: '*/10 * * * *'  # Runs every 30 min
   workflow_dispatch:      # Optional: Allows manual trigger
 
 jobs:
