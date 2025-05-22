@@ -191,6 +191,7 @@ channels = [
 ]
 
 hashcode_3 = [
+    "5LvPjA7oms",
     "CudzGm9xm6",
     "T3PIyktDDU",
     "9itOC3AHqJ",
@@ -237,6 +238,7 @@ hashcode_3 = [
     "jK2r6H1Dlj",
 ]
 channels_3 = [
+    "BrazzersTVEU",
     "Tiny4k1",
     "Tiny4k2",
     "Tiny4k3",
