@@ -1,7 +1,11 @@
 #EXTM3U
 #EXTINF:-1,hustlerhd
-https://tmstream.xyz:34443/hls/hustlerhd/playlist.m3u8?e=1756148700&st=974pjuTwsr43t-Qzb5ixoA
+https://tmstream.xyz:34443/hls/hustlerhd/playlist.m3u8?e=1756149837&st=6TjmuSxEU_dPYn1JMIMY0Q
+#EXTINF:-1,hustlertv
+https://tmstream.xyz:34443/hls/hustlertv/playlist.m3u8?e=1756149837&st=6TjmuSxEU_dPYn1JMIMY0Q
+#EXTINF:-1,redlight
+https://tmstream.xyz:34443/hls/redlight/playlist.m3u8?e=1756149838&st=cxTCEgh0tZSHRARSMiJCTA
 #EXTINF:-1,passion
-https://ortepe.xyz:11526/tv/passion/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8yNS8yMDI1IDU6MDU6MTYgUE0maGFzaF92YWx1ZT1PSEhKcFM3cVJOVHRxcEpTUzNsVjNRPT0mdmFsaWRtaW51dGVzPTYw
+https://ortepe.xyz:11526/tv/passion/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8yNS8yMDI1IDU6MjQ6MDYgUE0maGFzaF92YWx1ZT13c3JkaVVSdFdnZkdaeXFjeS9vVWpnPT0mdmFsaWRtaW51dGVzPTYw
 #EXTINF:-1,satisfaction
-https://w1.btstream.xyz:2053/tv/satisfaction/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8yNS8yMDI1IDU6MDU6MTYgUE0maGFzaF92YWx1ZT1PSEhKcFM3cVJOVHRxcEpTUzNsVjNRPT0mdmFsaWRtaW51dGVzPTYw
+https://w1.btstream.xyz:2053/tv/satisfaction/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8yNS8yMDI1IDU6MjQ6MDYgUE0maGFzaF92YWx1ZT13c3JkaVVSdFdnZkdaeXFjeS9vVWpnPT0mdmFsaWRtaW51dGVzPTYw
