@@ -33,7 +33,7 @@ flowchart TD
         VOD["Teleplay VOD<br>(teleplay.db SQLite)"]
     end
 
-    subgraph Core Proxy Pipeline (proxy1.py / proxy_server)
+    subgraph Core Proxy Pipeline 
         R["Upstream Stream & Auth Resolver"]
         W["Manifest Rewriter<br>(HLS URI & AES-128 Ingestion)"]
         P["Pre-Fetch Worker Engine<br>(Concurrent Threads)"]
@@ -219,7 +219,7 @@ nano .env
 Run the standalone server:
 
 ```bash
-python proxy1.py
+python proxy_script
 ```
 
 Or run the modular package:
@@ -242,7 +242,7 @@ Expected startup output:
 If you need physical `.m3u8` files saved in `docs/`:
 
 ```bash
-python proxy1.py --export-playlists
+python proxy_script --export-playlists
 ```
 
 ---
@@ -269,7 +269,7 @@ Open `http://localhost:8085/status?token=<ADMIN_TOKEN>` in your browser to inspe
 
 ## Performance Benchmarks
 
-| Metric | Direct Upstream Origin | Through `proxy1.py` Pipeline |
+| Metric | Direct Upstream Origin | Through `proxy_script` Pipeline |
 | :--- | :--- | :--- |
 | **Segment Latency** | 250 ms – 1,400 ms | **0.12 ms – 0.35 ms (RAM Hit)** |
 | **Session Token Expiry** | Fails after 10–15 min | **100% Zero-Downtime Auto-Heal** |
