@@ -27,8 +27,8 @@ A lightweight, multi-threaded, low-latency live streaming proxy and dynamic IPTV
 flowchart TD
     subgraph Upstream Sources
         J["JioTV Upstream<br>(1,083 HLS/DASH Channels)"]
-        S1["Server 1<br>(adult-tv-channels.com)"]
-        S2["Server 2<br>(adult-tv-channels.click)"]
+        S1["Server 1<br>(channels.com channel name)"]
+        S2["Server 2<br>(channels.click Channel Hash)"]
         OX["Server 3 / Oxax<br>(PlayerJS Base64 CDN)"]
         VOD["Teleplay VOD<br>(teleplay.db SQLite)"]
     end
@@ -45,7 +45,7 @@ flowchart TD
 
     subgraph Client Applications
         C1["Flutter TV App (media_kit / mpv)"]
-        C2["VLC / Kodi / TiviMate / IPTV Smarters"]
+        C2["TiViPlayer"]
         C3["Web Control Center & WebSocket (/status)"]
     end
 
