@@ -1,0 +1,15 @@
+# Core Web Framework
+Flask>=3.0.0
+
+# Real-Time WebSocket Support (Live Metrics Dashboard)
+flask-sock>=0.7.0
+
+# HTTP Client with HTTP/2 Engine Support
+httpx[http2]>=0.27.0
+
+# Environment Variable Configuration (.env)
+python-dotenv>=1.0.0
+
+# Video Scraping & Cloudflare Handling (for /vod_1.m3u)
+cloudscraper>=1.2.71
+selectolax>=1.0.1
